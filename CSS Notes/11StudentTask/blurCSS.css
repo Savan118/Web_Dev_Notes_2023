@@ -26,10 +26,7 @@ html {
 
 p {
     font-size: 15px;
-}
-
-p:hover {
-    color: rgb(60, 157, 202);
+    color: rgb(10, 13, 14);
 }
 
 a:visited {
@@ -49,7 +46,7 @@ a {
 
     /* add border to text */
     border-radius: 45px;
-    border: 3px inset rgba(31, 34, 225, 0.4);
+    border: 3px outset rgba(237, 239, 236, 0.618);
 
     /* color black (0,0,0) , opacity(0.4) */
     background-color: rgba(255, 255, 255, 0.1);
@@ -71,6 +68,6 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    width: 40%;
+    width: 45%;
     padding: 5%;
 }
