@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical of Font properties in CSS</title>
+    <style>
+        /* Given style to h3 and ol for highlighetd topics */
+        h3 {
+            font-size: x-large;
+            text-decoration: underline;
+            color: blue;
+        }
+
+        ol {
+            font-size: x-large;
+        }
+
+/* @Font face is used for external font family import to page as customfonts */
+        @font-face {
+            font-family: customfonts;
+            src: url(SedgwickAveDisplay-Regular.ttf);
+        }
+/* font family used for different type of fonts which is system in built font */
+.font-family {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* font family used for simple fonts which corners are not decorative */
+.font-family-sans {
+    font-family: sans-serif
+}
+
+/* font family used for decorative fonts which corners are decorated */
+.font-family-serif {
+    font-family: serif
+}
+
+/* Use here font size in pixel */
+.Font-size-20-px {
+    font-size: 20px;
+}
+
+/* Use here font size in em (1 em =/> 20px ) */
+.Font-size-2-em {
+    font-size: 2em;
+}
+
+/* Use here font size in rem (It's similar to em) */
+.Font-size-2-rem {
+    font-size: 2rem;
+}
+
+/* Use here font size in vh (viewport height) */
+.Font-size-2-vh {
+    font-size: 2vh;
+}
+
+/* Use here font size in "in" (Inches) */
+.Font-size-2-in {
+    font-size: .2in;
+}
+
+/* Use here font-stretch narrower (condensed) or wider (expanded). */
+.font-stretch {
+    font-stretch: expanded;
+}
+
+/* Use here font-style "Italic". */
+.font-style {
+    font-style: italic;
+}
+
+/* Use here font-variant "small-caps". */
+.font-variant {
+    font-variant: small-caps;
+}
+
+/* Use here font-weight "bolder". */
+.font-weight {
+    font-weight: bolder;
+}
+
+/* Use here line-height "40 Pixel". */
+.line-height {
+    line-height: 40px;
+}
+
+/* Use here external font-family as a customfonts . */
+        .externalfonts {
+            font-family: customfonts;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ol>
+        <li>
+            <h3>font-family</h3>
+        </li>
+
+
+        <h2 class="font-family-sans"> sans-serif font-family</h2>
+        <h2 class="font-family-serif"> sans-serif font-family</h2>
+        <p class="font-family">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid ipsam hic facilis maxime dolorum, repellat
+            consequatur nostrum rerum nam delectus quibusdam voluptate quae est recusandae facere tempore odit expedita
+            exercitationem!
+        </p>
+
+        <hr>
+
+        <li>
+            <h3>font-size</h3>
+        </li>
+
+        <p class="font-size">
+        <p class="Font-size-20-px">Font-size-20-px</p>
+        <p class="Font-size-2-em">Font-size-2-em</p>
+        <p class="Font-size-2-rem">Font-size-2-rem</p>
+        <p class="Font-size-2-vh">Font-size-2-vh</p>
+        <p class="Font-size-2-in">Font-size-2-in</p>
+        <pre>
+            /* &lt;absolute-size&gt; values */
+                font-size: xx-small;
+                font-size: x-small;
+                font-size: small;
+                font-size: medium;
+                font-size: large;
+                font-size: x-large;
+                font-size: xx-large;
+                font-size: xxx-large;
+                
+                /* &lt;relative-size&gt; values */
+                font-size: smaller;
+                font-size: larger;
+                
+                /* &lt;length&gt; values */
+                font-size: 12px;
+                font-size: 0.8em;
+                
+                /* &lt;percentage&gt; values */
+                font-size: 80%;
+                
+                /* math value */
+                font-size: math;
+                
+                /* Global values */
+                font-size: inherit;
+                font-size: initial;
+                font-size: revert;
+                font-size: revert-layer;
+                font-size: unset;
+        </pre>
+        </p>
+
+        <hr>
+
+        <li>
+            <h3>font-stretch</h3>
+        </li>
+
+        <p class="font-stretch"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt recusandae cum id
+            exercitationem quod quaerat eum dignissimos quae minima, nulla, fugit fugiat, quo aliquid harum in
+            voluptatem sit facere eius.</p>
+
+        <hr>
+
+        <li>
+            <h3>font-style</h3>
+        </li>
+
+        <p class="font-style">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia debitis a molestias.
+            Quos ratione autem fugit maxime dignissimos necessitatibus magni. Illum veritatis voluptatum officiis
+            inventore velit accusantium odio modi voluptas.</p>
+
+        <hr>
+
+        <li>
+            <h3>font-variant</h3>
+        </li>
+
+        <p class="font-variant">font-variant</p>
+
+        <hr>
+
+        <li>
+            <h3>font-weight</h3>
+        </li>
+
+        <p class="font-weight">font-weight</p>
+
+        <hr>
+
+        <li>
+            <h3>line-height</h3>
+        </li>
+        <p class="line-height"> line-height Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus,
+            excepturi, quia facere voluptatum et, in nam tenetur voluptatem saepe sapiente perspiciatis natus debitis!
+            Magnam eligendi molestias veritatis eveniet minima est.</p>
+
+        <hr>
+
+        <li>
+            <h3>Customfonts</h3>
+        </li>
+        <p class="externalfonts"> line-height Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus,
+            excepturi, quia facere voluptatum et, in nam tenetur voluptatem saepe sapiente perspiciatis natus debitis!
+            Magnam eligendi molestias veritatis eveniet minima est.</p>
+
+    </ol>
+</body>
+
+</html>

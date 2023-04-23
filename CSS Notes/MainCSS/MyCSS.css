@@ -1,0 +1,29 @@
+* {
+    font-family: serif, Geneva, sans-serif;
+    line-height: 2.5;
+}
+
+body {
+    height: 1500px;
+    background: rgb(161, 252, 161);
+    background: linear-gradient(0deg, rgb(100, 255, 100) 30%, rgb(232, 145, 142) 89%);
+}
+
+h3 {
+    color: rgb(65, 0, 176);
+    font-size: 30px;
+}
+
+p,
+ul {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+ol {
+    color: rgb(0, 131, 145);
+}
+
+ul {
+    color: rgb(0, 114, 104);
+}
