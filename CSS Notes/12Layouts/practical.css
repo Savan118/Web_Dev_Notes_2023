@@ -1,0 +1,35 @@
+.navbar {
+    background-color: rgba(226, 220, 50, 0.975);
+    border-radius: 5px;
+}
+
+.navbar li {
+    float: left;
+    list-style: none;
+    margin: 13px 20px;
+}
+
+.navbar ul {
+    overflow: auto;
+}
+
+.navbar li a {
+    text-decoration: none;
+    padding: 2px 2px;
+    font-size: 20px;
+    color: black;
+}
+
+input {
+
+    text-align: left;
+    height: 10px;
+    line-height: 0 10px 0 20px;
+    padding: 10px;
+}
+
+img {
+    float: left;
+    height: 100px;
+    width: 150px;
+}

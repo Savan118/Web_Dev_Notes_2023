@@ -16,7 +16,14 @@ h3 {
 
 p,
 ul {
+    padding: 2px;
+    margin: 2px;
     color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.lorem_txt {
+    color: white;
     font-size: 20px;
 }
 
@@ -26,4 +33,15 @@ ol {
 
 ul {
     color: rgb(0, 0, 0);
+}
+
+.spn {
+    border: 2px solid black;
+    margin: 2px;
+    padding: 2px;
+}
+
+div {
+    display: block;
+    border: 1px solid black;
 }
