@@ -3,6 +3,11 @@
     line-height: 2;
 }
 
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
 body {
     height: 1500px;
     background: rgb(161, 252, 161);
@@ -16,8 +21,8 @@ h3 {
 
 p,
 ul {
-    padding: 2px;
-    margin: 2px;
+    padding: 10px;
+    margin: 10px;
     color: rgb(0, 0, 0);
     font-size: 20px;
 }
@@ -26,6 +31,7 @@ ul {
     color: white;
     font-size: 20px;
 }
+
 
 ol {
     color: rgb(0, 0, 0);
