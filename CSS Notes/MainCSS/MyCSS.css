@@ -11,7 +11,7 @@ h1 {
 body {
     height: 1500px;
     background: rgb(161, 252, 161);
-    background: linear-gradient(0deg, rgb(32, 171, 236) 30%, rgb(6, 127, 86) 89%);
+    background: rgb(32, 171, 236);
 }
 
 h3 {

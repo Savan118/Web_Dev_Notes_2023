@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display flex direction</title>
     <style>
-        body{
-            background-color: rgb(159, 222, 159);
+        body {
+            background-color: rgb(37, 116, 169);
         }
-        .menubar {
+
+        .menu_item {
             border: 2px solid blue;
             border-radius: 20px;
-            background-color: rgb(232, 192, 176);
+            background-color: rgb(34, 135, 223);
             display: flex;
             flex-direction: row;
             width: 97vw;
@@ -22,9 +23,9 @@
 
         .index {
             border: 2px solid;
-            border-radius: 10px;
+            border-radius: 15 px;
             text-align: center;
-            
+
             background-color: rgb(207, 231, 239);
             font-size: xx-large;
             margin: 10px;
@@ -39,7 +40,7 @@
         }
 
         iframe {
-            border: 5px groove red;
+            border: 5px groove rgb(62, 81, 188);
             border-radius: 10px;
             width: 97vw;
             height: 100vh;
@@ -48,16 +49,19 @@
 </head>
 
 <body>
-    <h2>Hello Friends its a CSS tutorial</h2>
+    <h2>Welcome to My CSS Tutorial</h2>
 
 
-    <div class="menubar">
-        <li><a class="index" href="./IntroOfDisplay.html" target="myframe">Introduction of display</a></li>
+    <!--  -->
+    <div class="menu_item">
+        <li><a class="index" href="./Intro_Display.html" target="myframe">Introduction of display</a></li>
         <li><a class="index" href="./PracticalOfDisplay.html" target="myframe">Practical of Display</a></li>
         <li><a class="index" href="./PracticalOfDisplayFlex.html" target="myframe">Practical of Display-Flex</a></li>
-        <li><a class="index" href="./OtherPractical.html" target="myframe">Other Practical of CSS</a></li>
+        <li><a class="index" href="./Practicals.html" target="myframe">Other Practical of CSS</a></li>
     </div>
-    <iframe src="./IntroOfDisplay.html" frameborder="1" name="myframe"></iframe>
+
+    <!-- Here I used Iframe tag to display all pages in one frame -->
+    <iframe src="./Intro_Display.html" frameborder="3" name="myframe"></iframe>
 </body>
 
 </html>
