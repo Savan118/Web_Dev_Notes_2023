@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+
+        font-style: italic;
+        color: white;
+        font-size: 20px;
+    }
+
+    #page {
+        display: grid;
+        grid-template-columns: 50px 1fr 35px;
+        grid-template-rows: 150px 200px;
+        grid-template-areas:
+            "header mymenu"
+            "hero hero"
+            "main image"
+            "main extra"
+            "banner banner";
+        width: 150%;
+        height: 90px;
+    }
+
+    header {
+        grid-area: header;
+        background-color: black;
+    }
+
+    .menu {
+        grid-area: mymenu;
+        background-color: red;
+    }
+
+    .hero {
+        grid-area: hero;
+        background-color: rgb(26, 137, 185);
+    }
+
+    main {
+        grid-area: main;
+        background-color: rgb(6, 45, 45);
+    }
+
+    .banner {
+        grid-area: banner;
+        background-color: rgb(187, 210, 15);
+    }
+
+    .extra {
+        height: 90px;
+        width: 150px;
+        grid-area: extra;
+        background-color: rgb(11, 128, 100);
+    }
+
+    .image {
+        height: 90px;
+        width: 150px;
+        grid-area: image;
+        background-color: rgb(171, 198, 171);
+    }
+
+
+    /* For Desktop View */
+    /* @media screen and (min-width: 1024px) {
+        #page {
+            display: grid;
+            grid-template-rows: 50px 1fr 30px;
+            grid-template-columns: 120px 1fr;
+            grid-template-areas:
+                "header mymenu"
+                "hero hero"
+                "main image"
+                "main extra"
+                "footer footer";
+            width: 100%;
+            height: 250px;
+        }
+
+    } */
+
+    /* For Tablet View */
+    @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+        #page {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 120px auto 1fr;
+            grid-template-areas:
+                "header header"
+                "hero hero"
+                "mymenu main"
+                "mymenu footer"
+                "mymenu extra image";
+            width: 100%;
+            height: 250px;
+        }
+
+    }
+
+    /* For Mobile Portrait View */
+    /* @media screen and (max-device-width: 480px) and (orientation: portrait) {
+        #page {
+            display: grid;
+            grid-template-rows: 50px 1fr 30px;
+            grid-template-columns: 120px 1fr;
+            grid-template-areas:
+                "footer footer"
+                "navigation main"
+                "header header";
+            width: 100%;
+            height: 250px;
+        }
+
+    } */
+</style>
+
+<body>
+    <section id="page">
+
+        <header>Header</header>
+
+        <div class="menu">
+            <div>Menu</div>
+        </div>
+
+        <div class="hero">
+            <div>Hero</div>
+        </div>
+        <main>Main</main>
+        <div class="banner">
+            <div>Banner</div>
+        </div>
+        <div class="extra">
+            <div>Extra</div>
+        </div>
+        <div class="image">
+            <div>Image</div>
+        </div>
+
+
+    </section>
+</body>
+
+</html>

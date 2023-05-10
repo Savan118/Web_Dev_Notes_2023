@@ -51,3 +51,35 @@ div {
     display: block;
     border: 1px solid rgb(12, 12, 12);
 }
+
+/* This is Grid Intro StyleSheet */
+
+/* Display Block */
+.disp-b {
+    display: block;
+    border: 1px solid;
+    padding: 20px;
+    margin: 20px;
+    background-color: gray;
+    color: orange;
+}
+
+/* Display Inline */
+.disp-in {
+    display: inline;
+    border: 1px solid;
+    padding: 20px;
+    margin: 20px;
+    background-color: purple;
+    color: white;
+}
+
+/* Display Inline Block */
+.disp-in-b {
+    display: inline-block;
+    border: 1px solid;
+    padding: 20px;
+    margin: 20px;
+    background-color: teal;
+    color: snow;
+}
